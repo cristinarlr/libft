@@ -2,8 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a
-SRCS = 	ft_isalpha.c	\
-		ft_isdigit.c	\
+SRCS = 	ft_isalpha.c ft_isdigit.ci \
 		ft_isalnum.c	\
 		ft_isascii.c	\
 		ft_isprint.c	\
@@ -31,8 +30,6 @@ SRCS = 	ft_isalpha.c	\
 		ft_putchar_fd.c	\
 		ft_striteri.c	\
 		ft_strmapi.c	\
-
-# Si añadimos bonus hay que hacer un SRCS especial
 
 OBJS = $(SRCS:.c=.o)
 
