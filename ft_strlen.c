@@ -20,7 +20,7 @@ int ft_strlen(const char *s)
 	counter = 0;
 	while (s[counter] != '\0')
 		counter++;
-	return (i);
+	return (counter);
 }
 
 // int main()
