@@ -1,4 +1,18 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/25 00:18:01 by crramire          #+#    #+#             */
+/*   Updated: 2023/02/25 00:18:01 by crramire         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+
+// #include <stdio.h>
 
 int	ft_toupper(int c)
 {
@@ -18,10 +32,3 @@ int	ft_toupper(int c)
 // 	printf("after %d",ft_toupper(letter));
 // 	return (0);
 // }
-
-int	main()
-{
-	int c = 'a';
-	printf("%d", ft_toupper(c));
-	return (0);
-}
