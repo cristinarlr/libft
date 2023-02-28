@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/25 16:55:18 by crramire          #+#    #+#             */
-/*   Updated: 2023/01/25 17:33:47 by crramire         ###   ########.fr       */
+/*   Created: 2023/02/28 09:45:30 by crramire          #+#    #+#             */
+/*   Updated: 2023/02/28 09:45:30 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii (int c)
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
-    return(0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
 
-int main (void)
+/* int main (void)
 {
     ft_isascii ('a');
     return (0);
-}
+} */

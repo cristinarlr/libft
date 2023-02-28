@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/25 16:55:18 by crramire          #+#    #+#             */
-/*   Updated: 2023/01/25 17:33:47 by crramire         ###   ########.fr       */
+/*   Created: 2023/02/28 09:45:50 by crramire          #+#    #+#             */
+/*   Updated: 2023/02/28 09:45:50 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+#include "libft.h"
+#include <stdio.h>
+
+int	ft_isalnum(int c)
 {
-    if ((c >= 'a' && c <= 'z') ||(c >= 'A' && c <= 'Z') || (c <= '0' && c >= '9'))
-        return (1);
-    return(0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') 
+	|| (c >= '0' && c <= '9'))
+		return (1);
+	return (0);
 }
 
 // int main (void)
@@ -22,3 +26,18 @@ int ft_isalnum(int c)
 //     ft_isalnum('a');
 //     return (0);
 // }
+
+
+/* int	main ()
+{
+    char i;
+	
+	i = '0';
+    while (i <= '9')
+    {
+        printf("%d", ft_isalnum(i));
+        i++;
+    }
+	return(0);
+} */
+

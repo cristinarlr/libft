@@ -6,11 +6,9 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/25 00:18:01 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/25 00:18:01 by crramire         ###   ########.fr       */
+/*   Updated: 2023/02/28 10:03:18 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 // #include <stdio.h>
 
@@ -20,15 +18,14 @@ int	ft_toupper(int c)
 	{
 		return (c - 32);
 	}
-	return (c); 
+	return (c);
 }
-
-// int	main()
-// {
-// 	int letter;
+/* int	main()
+{
+	int letter;
 	
-// 	letter = 'b';
-// 	printf("before %d\n", letter);
-// 	printf("after %d",ft_toupper(letter));
-// 	return (0);
-// }
+	letter = 'b';
+	printf("before %d\n", letter);
+	printf("after %d",ft_toupper(letter));
+	return (0);
+} */

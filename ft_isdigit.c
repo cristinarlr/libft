@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/25 16:55:18 by crramire          #+#    #+#             */
-/*   Updated: 2023/01/25 17:33:47 by crramire         ###   ########.fr       */
+/*   Created: 2023/02/28 09:45:21 by crramire          #+#    #+#             */
+/*   Updated: 2023/02/28 09:45:21 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit (int c)
+int	ft_isdigit(int c)
 {
-    if (c <= '0' && c >= '9')
-        return (1);
-    return(0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
-
-int main (void)
+/* int main (void)
 {
     ft_isdigit('5');
     return (0);
 }
+ */

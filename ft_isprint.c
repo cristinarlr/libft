@@ -3,41 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/22 11:07:50 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/22 12:05:26 by crramire         ###   ########.fr       */
+/*   Created: 2023/02/28 09:45:15 by crramire          #+#    #+#             */
+/*   Updated: 2023/02/28 10:25:11 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-#include <ctype.h>
-#include <stdio.h>*/
 
-int	ft_isprint (int c)
+// #include <ctype.h>
+// #include <stdio.h>
+
+int	ft_isprint(int c)
 {
-	if (c >= 40 && c <= 176)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }
 
-/*
-int	main (void)
+/* int	main(void)
 {
-	char c;
+	char	c;
 
 	c = 'Q';
-	printf("Result when a printable %c is passed to isprint(): %d", c, ft_isprint(c));
+	printf("Result printable %c is passed to isprint(): %d", c, ft_isprint(c));
 	printf("\n");
 	c = '\n';
-	printf("Result when a printable %c is passed to isprint(): %d", c, ft_isprint(c));
-	
+	printf("Result printable %c is passed to isprint(): %d", c, ft_isprint(c));
 	printf("\n");
-	
 	c = 'Q';
-	printf("Result when a printable %c is passed to isprint(): %d", c, isprint(c));
+	printf("Result printable %c is passed to isprint(): %d", c, isprint(c));
 	printf("\n");
 	c = '\n';
-	printf("Result when a printable %c is passed to isprint(): %d", c, isprint(c));
-	
-	return(0);
-}*/
+	printf("Result printable %c is passed to isprint(): %d", c, isprint(c));
+	return (0);
+} */
