@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   InP_ft_memset.c                                    :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 14:29:11 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/28 14:09:34 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/01 09:31:44 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memset(void *b, int c, size_t len)
 /* int main () 
 { 
     char strft[50];
-    strcpy(strft,"Esta es string.h library function");
+    strcpy(strft,"Esta es mi función ft_memset para libft.h");
     puts(strft);
     ft_memset(strft,'$',3);
     puts(strft);
