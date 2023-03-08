@@ -6,12 +6,14 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:45:15 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/28 10:25:11 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:21:21 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <ctype.h>
 // #include <stdio.h>
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

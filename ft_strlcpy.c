@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:51 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 12:08:25 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:39:10 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,11 @@ int	main()
 	printf("%s\n", destination);
 	return (0);
 }*/
+
+int	main()
+{
+	ft_print_result(ft_strlcpy(dest, "lorem", 15));
+    write(1, "\n", 1);
+    write(1, dest, 15);
+	return (0);
+}

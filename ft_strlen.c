@@ -6,14 +6,15 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 12:18:36 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/28 10:20:44 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:21:57 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <string.h>
 // #include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 

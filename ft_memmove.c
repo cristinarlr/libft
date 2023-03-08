@@ -6,38 +6,33 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:25 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 12:11:37 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:21:29 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <string.h>
 #include <stdio.h>
+#include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char *ptr_src;
-	unsigned char *ptr_dst;
-	
+	unsigned char	*ptr_src;
+	unsigned char	*ptr_dst;
+
 	ptr_src = (unsigned char *) src;
 	ptr_dst = (unsigned char *) dst;
-	
-	// check if pointers are null.
 	if (!dst && !src)
 		return (NULL);
-	// check if len is 0 or if src and dest pointers point to the same place
 	if (len == 0 || ptr_src == ptr_dst)
 		return (dst);
-	// check if src is smaller than the dest array > fill in backwards
 	if (ptr_src < ptr_dst)
 	{
-		while(len--)
+		while (len--)
 			*(ptr_dst + len) = *(ptr_src + len);
 	}
-	// check if src is greater than the dest array (if src address>dest)
 	else
 	{
-		while(len--)
+		while (len--)
 			*ptr_dst++ = *ptr_src++;
 	}
 	return (dst);
@@ -87,5 +82,3 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	printf("%s", destination); *
 	return (0);
 } */
-
-

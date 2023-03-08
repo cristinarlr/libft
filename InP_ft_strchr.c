@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   InP_ft_strchr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:42:58 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/28 09:43:07 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:22:25 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strchr(const char *s, int c)
-{
+#include "libft.h"
 
+char	*ft_strchr(const char *s, int c)
+{
+	return (0);
 }

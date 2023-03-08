@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 15:11:14 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 12:13:40 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:33:09 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_bzero(void *s, size_t len)
 	ptr = (unsigned char *) s;
 	while (len--)
 	{
-		*ptr = '0';
+		*ptr = 0;
 		ptr++;
 	}
 }
@@ -39,3 +39,13 @@ void	ft_bzero(void *s, size_t len)
 	printf("%s\n", s);
 	return (0);
 } */
+/*
+int	main()
+{
+	char mem[] = "hola";
+	
+	memset(mem, 'e', 5);
+    ft_bzero(mem, 5);
+    write(1, mem, 5);
+	return (0);
+}*/
