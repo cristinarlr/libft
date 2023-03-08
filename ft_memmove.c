@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:25 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/06 12:26:31 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/07 10:43:02 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,19 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	ptr_src = (unsigned char *) src;
 	ptr_dst = (unsigned char *) dst;
 	
-	// verificar si los punteros son nulos.
+	// check if pointers are null.
 	if (!dst && !src)
 		return (NULL);
-	// si el len es 0 o si el puntero de src y dest apuntan a mismo sitio
+	// check if len is 0 or if src and dest pointers point to the same place
 	if (len == 0 || ptr_src == ptr_dst)
 		return (dst);
-	// si src es menor que el array de dest hay que rellenar al revés
+	// check if src is smaller than the dest array > fill in backwards
 	if (ptr_src < ptr_dst)
 	{
 		while(len--)
 			*(ptr_dst + len) = *(ptr_src + len);
 	}
-	// si src es mayor que el array de dest (si el address de src>dest)
+	// check if src is greater than the dest array (if src address>dest)
 	else
 	{
 		while(len--)
@@ -45,14 +45,14 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 
 int	main()
 { 
-	// test 1: punteros nulos
-	char source[] = NULL;
+	// test 1: null pointers
+	char source[] = "";
 	char destination[] = "gominolas\n";
 	printf("%s", destination);
-	ft_memmove(destination, source, 3);
+	ft_memmove(destination, NULL, 3);
 	printf("%s", destination);
 
-	// test 2: len==0
+/* 	// test 2: len==0
 	char source[] = "pipa\n";
 	char destination[] = "gominolas\n";
 	printf("%s", destination);
@@ -85,7 +85,7 @@ int	main()
 	char destination[] = "pipa\n";
 	printf("%s", destination);
 	ft_memmove(destination, source, 20);
-	printf("%s", destination);
+	printf("%s", destination); */
 
 	return (0);
 }
