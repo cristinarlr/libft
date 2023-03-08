@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:45:50 by crramire          #+#    #+#             */
-/*   Updated: 2023/02/28 09:45:50 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/08 12:16:27 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') 
-	|| (c >= '0' && c <= '9'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
+		|| (c >= '0' && c <= '9'))
 		return (1);
 	return (0);
 }
@@ -26,7 +26,6 @@ int	ft_isalnum(int c)
 //     ft_isalnum('a');
 //     return (0);
 // }
-
 
 /* int	main ()
 {
@@ -40,4 +39,3 @@ int	ft_isalnum(int c)
     }
 	return(0);
 } */
-

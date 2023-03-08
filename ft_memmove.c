@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:25 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/07 10:43:02 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/08 12:11:37 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,16 +43,15 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-int	main()
+/* int	main()
 { 
 	// test 1: null pointers
 	char source[] = "";
 	char destination[] = "gominolas\n";
 	printf("%s", destination);
-	ft_memmove(destination, NULL, 3);
+	ft_memmove(destination, source, 3);
 	printf("%s", destination);
-
-/* 	// test 2: len==0
+ 	// test 2: len==0
 	char source[] = "pipa\n";
 	char destination[] = "gominolas\n";
 	printf("%s", destination);
@@ -85,9 +84,8 @@ int	main()
 	char destination[] = "pipa\n";
 	printf("%s", destination);
 	ft_memmove(destination, source, 20);
-	printf("%s", destination); */
-
+	printf("%s", destination); *
 	return (0);
-}
+} */
 
 

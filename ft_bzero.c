@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 15:11:14 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/01 17:29:27 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/08 12:13:40 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-/* VERSION PRETTY pero que me da problemas al compilarla, porque hay que compilarla junto con ft_memset
+/* VERSION PRETTY
 void ft_bzero(void *s, size_t n)
 {
     ft_memset(s, 0, n);
