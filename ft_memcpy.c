@@ -34,7 +34,7 @@ int main()
     printf("%s", destination);
     memcpy(destination, source, 3);
     printf("%s", destination);
-    // size src > dest len < dest
+   /*  // size src > dest len < dest
     char source1 [] = "caramelos de limon\n";
     char destination1 []= "go\n";   
     printf("%s", destination1);
@@ -51,7 +51,7 @@ int main()
     char destination1 []= "go\n";   
     printf("%s", destination1);
     memcpy(destination1, source1, 3);
-    printf("%s", destination1);
+    printf("%s", destination1); */
     
     return (0);
     

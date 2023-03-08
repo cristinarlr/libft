@@ -15,12 +15,12 @@
 
 int	ft_strlen(const char *s)
 {
-	int	counter;
+	int	i;
 
-	counter = 0;
-	while (s[counter] != '\0')
-		counter++;
-	return (counter);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
 
 /* int main()

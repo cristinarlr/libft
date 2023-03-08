@@ -13,7 +13,7 @@
 #include "libft.h"
 #include <stdio.h>
 
-/* VERSION PRETTY pero que me da problemas al compilarla
+/* VERSION PRETTY pero que me da problemas al compilarla, porque hay que compilarla junto con ft_memset
 void ft_bzero(void *s, size_t n)
 {
     ft_memset(s, 0, n);
