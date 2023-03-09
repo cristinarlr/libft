@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:51 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 13:39:10 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/09 16:52:04 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ int	main()
 	return (0);
 }*/
 
-int	main()
+/* int	main()
 {
 	ft_print_result(ft_strlcpy(dest, "lorem", 15));
     write(1, "\n", 1);
     write(1, dest, 15);
 	return (0);
-}
+} */
