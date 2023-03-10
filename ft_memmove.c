@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:25 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 13:21:29 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/10 14:41:54 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*ptr_src;
-	unsigned char	*ptr_dst;
+	const unsigned char	*ptr_src;
+	unsigned char		*ptr_dst;
 
-	ptr_src = (unsigned char *) src;
+	ptr_src = (const unsigned char *) src;
 	ptr_dst = (unsigned char *) dst;
 	if (!dst && !src)
 		return (NULL);

@@ -32,7 +32,7 @@ SRCS = 	ft_isalpha.c	\
 		# ft_striteri.c	\
 		# ft_strmapi.c	\
 
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:%.c=%.o)
 
 all: $(NAME)
 
@@ -41,7 +41,7 @@ $(NAME): $(OBJS)
 	ranlib $(NAME)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $(<) -o $(@)
 
 clean:
 	rm -f $(OBJS)
@@ -52,3 +52,7 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
+run: test.o $(NAME)
+	$(CC) $(CFLAGS) $(^) -o run.out
+	./run.out
