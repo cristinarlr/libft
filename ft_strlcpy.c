@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:51 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/12 23:10:58 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/13 10:15:31 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@
 	return (ft_strlen(src));
 } */
 
-
 size_t	ft_strlcpy(char	*dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -46,13 +45,6 @@ size_t	ft_strlcpy(char	*dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (size_src);
 }
-
-
-
-
-
-
-
 
 /* size_t	ft_strlcpy(char	*dst, const char *src, size_t dstsize)
 {

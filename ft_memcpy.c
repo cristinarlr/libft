@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 15:18:38 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 12:18:53 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/13 11:18:04 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,15 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 
 	ptr1 = (unsigned char *restrict) src;
 	ptr2 = (unsigned char *restrict) dst;
+	if (dst == NULL && src == NULL)
+		return (NULL);
+	if (n == 0)
+		return (dst);
 	while (n--)
 		*ptr2++ = *ptr1++;
 	return (dst);
 }
+
 /*
 int	main()
 {
