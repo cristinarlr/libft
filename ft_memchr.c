@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 13:24:42 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/15 16:57:57 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/15 22:11:35 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	cc = (unsigned char) c;
 	ptr = (unsigned char *) s;
-	if (n > 0 && cc == '\0')
-		return ((void *) ptr);
 	while (n > 0)
 	{
 		if (*ptr == cc)
@@ -40,6 +38,8 @@ int	main ()
 	str = "hola";
 	
 	printf("FUNCIÓN ORIGINAL:\n");
+	printf("test con '\0' intercalado en el str:\n");
+	printf("%s\n", memchr("/|\x12\xff\x09\0\x42\042\0\42|\\",'\0', 12));
 	printf("test de funcionamiento normal:\n");
 	printf("%s\n", memchr(str,'l', 3));
 	printf("test de funcionamiento no encuentra c:\n");
@@ -54,6 +54,8 @@ int	main ()
 	printf("%s\n", memchr(str,'l', 12));
 	
 	printf("MI FUNCIÓN:\n");
+	printf("test con '\0' intercalado en el str:\n");
+	printf("%s\n", ft_memchr("/|\x12\xff\x09\0\x42\042\0\42|\\",'\0', 12));
 	printf("test de funcionamiento normal:\n");
 	printf("%s\n", ft_memchr(str,'z', 3));
 	printf("test de funcionamiento no encuentra c:\n");
