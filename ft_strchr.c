@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:42:58 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/14 14:56:11 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:28:04 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,14 @@ char	*ft_strchr(const char *s, int c)
 	char	ccomp;
 
 	ccomp = (char) c;
-	while(*s && *s != ccomp)
+	while (*s && *s != ccomp)
 		s++;
 	if (*s == ccomp)
-		return((char *)s);
+		return ((char *)s);
 	return (0);
 }
 
+/*
 int main()
 {
 	char *source = "h\0la";	
@@ -36,4 +37,4 @@ int main()
 	printf ("Puntero devuelto: %s\n", ptr);
 	printf ("Address puntero devuelto: %p\n", (void *)ptr);
 	return (0);
-}
+}*/

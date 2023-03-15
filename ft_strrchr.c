@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 13:16:35 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/14 15:12:20 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/15 10:32:41 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
  */
 char	*ft_strrchr(const char *s, int c)
 {
-	char ccomp;
+	char	ccomp;
 
 	ccomp = (char) c;
 	while (*s)
@@ -38,7 +38,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (*s != ccomp)
 		s--;
 	if (*s == ccomp)
-		return((char *) s);
+		return ((char *) s);
 	return (0);
 }
 
