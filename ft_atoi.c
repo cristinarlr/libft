@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 13:45:33 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/16 14:21:02 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/16 14:24:01 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	 main ()
 {
 	char	*str;
 
-	str = "3";
+	str = "p";
 	printf ("%d\n", atoi(str));
 	printf ("%d\n", ft_atoi(str));
 	return (0);
