@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/16 13:45:33 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/16 14:24:01 by crramire         ###   ########.fr       */
+/*   Created: 2023/03/18 00:03:07 by Cristina          #+#    #+#             */
+/*   Updated: 2023/03/18 01:14:02 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* It converts a string to an integer. */
-
-int ft_atoi(const char *str)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char	*ptr;
-    int resultado;
+	void	*ptr;
 
-    resultado = *ptr - 78;
-    return (resultado);
+	ptr = malloc(count * size);
+	if (ptr == 0)
+		return (0);
+	ft_bzero (ptr, count * size);
+	return (ptr);
 }
 
-
-int	 main ()
+/* int main()
 {
-	char	*str;
-
-	str = "p";
-	printf ("%d\n", atoi(str));
-	printf ("%d\n", ft_atoi(str));
-	return (0);
-}
+    return (0);
+} */
