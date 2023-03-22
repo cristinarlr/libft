@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:42:58 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/22 10:06:06 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/22 15:20:11 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-
 
 /* int main()
 {

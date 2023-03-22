@@ -6,58 +6,63 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 13:57:22 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/21 15:11:18 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/22 15:24:08 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	ft_start(char const *s1, char const *set)
+{
+	size_t	ltrim;
+
+	ltrim = 0;
+	while (s1 [ltrim] != '\0')
+	{
+		if (ft_strchr(set, s1[ltrim]) != 0)
+			ltrim++;
+		else
+			break ;
+	}
+	return (ltrim);
+}
+
+int	ft_end(char const *s1, char const *set)
+{
+	size_t	rtrim;
+
+	rtrim = ft_strlen(s1);
+	while (rtrim > 0)
+	{
+		if (ft_strchr(set, s1[rtrim]) != 0)
+			rtrim--;
+		else
+			break ;
+	}
+	return (rtrim);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	size_t	j;
-	size_t	strlen;
-	
-	i = 0;
-	j = 0;
-	strlen = ft_strlen(s1);
-	if (*s1 == 0)
+	size_t	start;
+	size_t	end;
+	char	*trimmed;
+
+	if (s1 == 0 || set == 0)
 		return (0);
-	while (*s1 != '\0' || strlen > 0)
-	{
-		printf("dentro de bucle 1");
-		while (*set != '\0')
-		{
-			printf("dentro de subbucle 1.1");
-			if (s1[i] != set[j])
-				j++;
-			if (s1[i] == set[j])
-				i++;
-			j = 0;
-            set++;
-  		}
-		j = 0;
-		while (*set != '\0')
-		{
-			printf("dentro de subbucle 1.2");
-			if (s1[strlen-1] != set[j])
-				j++;
-			if (s1[strlen-1] == set[j])
-				strlen--;
-			j = 0;
-		}
-		return (ft_substr(s1, i, (strlen - i)));
-	}
-	return (0);
+	start = ft_start(s1, set);
+	end = ft_end(s1, set) - start + 1;
+	trimmed = ft_substr(s1, start, end);
+	return ((char *) trimmed);
 }
 
-int main()
+/* int main()
 {
-	char	*s;
+	char	s[30000] = "hola";
 	char	*set;
 
-	s = "aaatortillaaal";
 	set = "la";
-	printf("trim: %s", ft_strtrim(s,set));
+	printf("valor de strlen: %zu\n", ft_strlen(s));
+	printf("trim: %s", ft_strtrim(s, set));
 	return (0);
-}
+} */
