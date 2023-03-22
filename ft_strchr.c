@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:42:58 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/15 10:28:04 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/22 10:06:06 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,14 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-/*
-int main()
+
+/* int main()
 {
 	char *source = "h\0la";	
 	char *ptr = ft_strchr(source, 'h'); // my_function() devuelve un puntero
-  
+  	char *source = "alatortilla";	
+	char *ptr = ft_strchr(source, 'l');
+
   	if (ptr == NULL)
 		printf("La función devuelve un puntero nulo.\n");
 	else
@@ -37,4 +39,4 @@ int main()
 	printf ("Puntero devuelto: %s\n", ptr);
 	printf ("Address puntero devuelto: %p\n", (void *)ptr);
 	return (0);
-}*/
+} */
