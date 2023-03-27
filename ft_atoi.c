@@ -6,12 +6,21 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 13:44:31 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/17 14:18:41 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/27 14:34:09 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * It takes a string, skips any whitespace, 
+ * then takes any number of digits, and returns the number
+ * represented by those digits
+ * 
+ * @param str The string to be converted.
+ * 
+ * @return the integer value of the string.
+ */
 int	ft_atoi(const char *str)
 {
 	size_t		i;
