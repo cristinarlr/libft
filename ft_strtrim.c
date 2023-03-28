@@ -6,18 +6,18 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 13:57:22 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/22 15:24:08 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/28 14:26:55 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_start(char const *s1, char const *set)
+static int	ft_start(char const *s1, char const *set)
 {
 	size_t	ltrim;
 
 	ltrim = 0;
-	while (s1 [ltrim] != '\0')
+	while (s1[ltrim] != '\0')
 	{
 		if (ft_strchr(set, s1[ltrim]) != 0)
 			ltrim++;
@@ -27,7 +27,7 @@ int	ft_start(char const *s1, char const *set)
 	return (ltrim);
 }
 
-int	ft_end(char const *s1, char const *set)
+static int	ft_end(char const *s1, char const *set)
 {
 	size_t	rtrim;
 

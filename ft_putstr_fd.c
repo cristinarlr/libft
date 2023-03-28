@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 10:37:25 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/27 10:54:56 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/03/28 10:21:48 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s == NULL)
-		return;
+		return ;
 	while (*s != '\0')
 	{
 		write (fd, s, 1);
