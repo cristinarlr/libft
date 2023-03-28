@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 15:41:18 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/28 14:12:26 by crramire         ###   ########.fr       */
+/*   Updated: 2023/03/28 16:54:24 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ int	ft_countwords(char const *s, char c)
 	
 	i = 0;
 	count = 0;
-	while (*s != '\0')	
+	while (s[i] != '\0')	
 	{
-		if (ft_strchr(s, c) != 0)
+		if (ft_strchr(s[i], c) != 0)
 		{
 			count++;
-			s++;
+			i++;
 		}
 		else
-			s++;
+			i++;
 	}
 	printf("count: %zu\n", count);
 	return (count);
