@@ -113,7 +113,7 @@ int	main ()
 	int c;
     char **arr;
 
-	s = "tortilla.";
+	s = "tortilla.de.patatas";
 	c = '.';
     arr = ft_split(s, c);
     int x = 0;
