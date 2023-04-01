@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 14:35:34 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/31 00:51:01 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/01 18:17:36 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,16 @@ static int	ft_countwords(char const *s, char c)
 	return (count);
 }
 
-static char	*ft_alocateword(int j, char *word, char **array)
+static char	**ft_allocateword(char const *s, int j, int i, char **array)
 {
-	word = (char *)ft_calloc(j + 1, sizeof(char));
+	char	*word;
+
+	word = (char *)ft_calloc((j + 1), sizeof(char));
 	if (!word)
-		ft_freearray(array);
-	return (word);
+		return (0);
+	ft_strlcpy(word, (char *)&s[i - j], j + 1);
+	array[0] = word;
+	return (array);
 }
 
 static char	**ft_addwords(char const *s, char c, int y, char **array)
@@ -59,7 +63,6 @@ static char	**ft_addwords(char const *s, char c, int y, char **array)
 	int		i;
 	int		j;
 	int		raw;
-	char	*word;
 
 	i = 0;
 	j = 0;
@@ -72,9 +75,9 @@ static char	**ft_addwords(char const *s, char c, int y, char **array)
 		{
 			while (raw < y && j > 0)
 			{
-				word = ft_alocateword(j, word, array);
-				ft_strlcpy(word, &s[i - j], j + 1);
-				array[raw++] = word;
+				if (!ft_allocateword(s, j, i, array + raw))
+					return (0);
+				raw++;
 				j = 0;
 			}
 		}
@@ -94,8 +97,7 @@ char	**ft_split(char const *s, char c)
 	array = (char **)ft_calloc(y, sizeof(char *));
 	if (!array)
 		return (0);
-	ft_addwords(s, c, y, array);
-	if (!array)
+	if (!ft_addwords(s, c, y, array))
 	{
 		ft_freearray(array);
 		return (0);
