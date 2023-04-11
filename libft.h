@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 09:31:43 by crramire          #+#    #+#             */
-/*   Updated: 2023/04/08 08:07:14 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 08:47:15 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
 }	t_list;
 int		ft_isalpha(int c);

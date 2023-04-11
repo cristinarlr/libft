@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 19:05:43 by Cristina          #+#    #+#             */
-/*   Updated: 2023/04/08 08:35:52 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 08:46:06 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*s2;
-	unsigned int		i;
+	char			*s2;
+	unsigned int	i;
 
 	i = 0;
 	if (!s || !f)
