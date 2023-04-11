@@ -3,24 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 11:58:18 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/30 23:37:55 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 10:14:11 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * The function ft_strjoin() takes two strings as parameters, 
- * and returns a new string that is the
- * result of the concatenation of the two strings
+ * The function `ft_strjoin` concatenates two strings and returns a new string.
  * 
- * @param s1 The first string to be concatenated.
- * @param s2 The string to be appended to the end of s1.
+ * @param s1 A pointer to a constant string (char array) that represents the first string to be joined.
+ * @param s2 The parameter `s2` is a pointer to a constant character string that will be concatenated
+ * to `s1` in the `ft_strjoin` function.
  * 
- * @return A pointer to a string.
+ * @return The function `ft_strjoin` returns a pointer to a newly allocated string which is the result
+ * of concatenating two input strings `s1` and `s2`. If either `s1` or `s2` is NULL, the function
+ * returns NULL.
  */
 char	*ft_strjoin(char const *s1, char const *s2)
 {

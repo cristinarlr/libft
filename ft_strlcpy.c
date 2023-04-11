@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:51 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/31 00:15:59 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:41:55 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,19 @@
 	return (ft_strlen(src));
 } */
 
+/**
+ * The function `ft_strlcpy` copies a string from `src` to `dst` with a maximum size of `dstsize` and
+ * returns the length of the source string.
+ * 
+ * @param dst A pointer to the destination string where the copied string will be stored.
+ * @param src The source string that we want to copy into the destination string. It is of type `const
+ * char *`, which means it is a pointer to a constant character array.
+ * @param dstsize The parameter `dstsize` is the size of the destination buffer `dst` that is passed to
+ * the function `ft_strlcpy()`. It specifies the maximum number of characters that can be copied from
+ * the source string `src` to the destination string `dst`, including the terminating null byte.
+ * 
+ * @return the size of the source string (excluding the null terminator).
+ */
 size_t	ft_strlcpy(char	*dst, const char *src, size_t dstsize)
 {
 	size_t	i;

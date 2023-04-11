@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 13:44:31 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/27 14:34:09 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 10:05:50 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * The function `ft_atoi` converts a string to an integer.
+ * 
+ * @param str The input string that needs to be converted to an integer.
+ * 
+ * @return The function `ft_atoi` returns an integer value that is the converted value of the input
+ * string `str`.
+ */
 int	ft_atoi(const char *str)
 {
 	size_t		i;

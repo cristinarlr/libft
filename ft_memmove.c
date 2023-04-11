@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:25 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/10 14:41:54 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:38:40 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,19 @@
 #include <stdio.h>
 #include "libft.h"
 
+/**
+ * This function copies a block of memory from a source address to a destination address, handling
+ * overlapping memory blocks correctly.
+ * 
+ * @param dst The destination pointer where the copied data will be stored.
+ * @param src The source pointer, which points to the memory location from where the data is to be
+ * copied. It is of type `const void *`, which means that the data pointed to by this pointer cannot be
+ * modified by the function.
+ * @param len len is a variable of type size_t, which represents the number of bytes to be moved from
+ * the source memory area to the destination memory area.
+ * 
+ * @return a pointer to the destination memory block (i.e. `dst`).
+ */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	const unsigned char	*ptr_src;

@@ -6,12 +6,22 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 15:18:38 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/13 11:18:04 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:37:07 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * The function `ft_memcpy` copies `n` bytes from `src` to `dst`.
+ * 
+ * @param dst A pointer to the destination memory block where the copied data will be stored.
+ * @param src The source pointer to the memory location from where the data will be copied.
+ * @param n The parameter "n" in the function "ft_memcpy" represents the number of bytes to be copied
+ * from the source memory area to the destination memory area.
+ * 
+ * @return a pointer to the destination (dst) memory block.
+ */
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
 	unsigned char	*ptr1;

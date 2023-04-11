@@ -3,15 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 13:24:42 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/15 22:11:35 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:56:11 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * This function searches for a specific character in a block of memory and returns a pointer to the
+ * first occurrence of that character.
+ * 
+ * @param s A pointer to the memory area to be searched.
+ * @param c The integer value of the character to be searched in the memory block.
+ * @param n n is a size_t variable representing the number of bytes to search in the memory block
+ * pointed to by the pointer s.
+ * 
+ * @return a pointer to the first occurrence of the character 'c' in the first 'n' bytes of the memory
+ * block pointed to by 's'. If the character is not found, it returns a null pointer.
+ */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	cc;

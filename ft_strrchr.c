@@ -3,15 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 13:16:35 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/15 23:04:08 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:50:34 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * The function searches for the last occurrence of a character in a string and returns a pointer to
+ * it.
+ * 
+ * @param s The string to search for the character 'c'.
+ * @param c c is an integer representing the ASCII value of the character to be searched in the string.
+ * 
+ * @return The function `ft_strrchr` returns a pointer to the last occurrence of the character `c` in
+ * the string `s`. If the character is not found, it returns a null pointer.
+ */
 char	*ft_strrchr(const char *s, int c)
 {
 	size_t			i;

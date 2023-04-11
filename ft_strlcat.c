@@ -6,7 +6,7 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 09:44:41 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/10 14:59:16 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:44:47 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,18 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * The function `ft_strlcat` concatenates two strings, ensuring that the resulting string is
+ * null-terminated and does not exceed a specified size limit.
+ * 
+ * @param dst The destination string where the concatenated string will be stored.
+ * @param src The source string that needs to be concatenated to the destination string.
+ * @param dstsize The maximum size of the destination buffer (including the null-terminator).
+ * 
+ * @return The function `ft_strlcat` returns the total length of the string it creates after
+ * concatenating the source string `src` to the destination string `dst`, up to a maximum of `dstsize`
+ * characters.
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

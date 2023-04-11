@@ -6,12 +6,26 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 13:57:22 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/28 14:26:55 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/11 10:16:49 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * The function returns the number of characters to be trimmed from the beginning of a string based on
+ * a set of characters to be removed.
+ * 
+ * @param s1 The parameter `s1` is a pointer to a constant character string that we want to trim.
+ * @param set The `set` parameter is a string containing a set of characters that are considered to be
+ * "trim" characters. These characters will be removed from the beginning and end of another string
+ * (passed as `s1`) in a later function.
+ * 
+ * @return The function `ft_start` is returning an integer value which represents the number of
+ * characters in the beginning of the string `s1` that match any character in the string `set`. This
+ * value is used to determine the starting point for the trimming operation in the `ft_strtrim`
+ * function.
+ */
 static int	ft_start(char const *s1, char const *set)
 {
 	size_t	ltrim;

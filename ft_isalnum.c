@@ -13,6 +13,14 @@
 #include "libft.h"
 #include <stdio.h>
 
+/**
+ * The function checks if a given character is alphanumeric or not.
+ * 
+ * @param c c is a variable of type int that represents a character in ASCII code.
+ * 
+ * @return The function `ft_isalnum` returns 1 if the input character `c` is an alphanumeric character
+ * (i.e. a letter or a digit), and 0 otherwise.
+ */
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')

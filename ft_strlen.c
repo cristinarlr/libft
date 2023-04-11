@@ -6,14 +6,23 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 12:18:36 by crramire          #+#    #+#             */
-/*   Updated: 2023/03/08 13:21:57 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/11 09:30:36 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <string.h>
-// #include <stdio.h>
 #include "libft.h"
 
+/**
+ * The function calculates the length of a string by iterating through it until it reaches the null
+ * terminator.
+ * 
+ * @param s The parameter `s` is a pointer to a constant character (string) that the function
+ * `ft_strlen` will calculate the length of.
+ * 
+ * @return The function `ft_strlen` returns the length of the string `s` passed as argument, excluding
+ * the terminating null byte. The return type is `size_t`, which is an unsigned integer type defined in
+ * the standard library header `<stddef.h>`.
+ */
 size_t	ft_strlen(const char *s)
 {
 	int	i;

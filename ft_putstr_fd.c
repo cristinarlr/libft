@@ -3,23 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 10:37:25 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/30 12:24:30 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/11 11:19:30 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * Write the string s to the file descriptor fd
- * 
- * @param s The string to be printed.
- * @param fd file descriptor
- * 
- * @return nothing.
- */
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s == NULL)

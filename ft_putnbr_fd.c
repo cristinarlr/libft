@@ -6,11 +6,12 @@
 /*   By: crramire <crramire@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 11:13:35 by Cristina          #+#    #+#             */
-/*   Updated: 2023/03/28 11:01:14 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/11 11:34:16 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "limits.h"
 
 void	ft_putchar(int n, int fd)
 {
@@ -20,11 +21,13 @@ void	ft_putchar(int n, int fd)
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n == -2147483648)
+	/* if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
 		return ;
-	}
+	} */
+
+	
 	if (n < 0)
 	{
 		write (fd, "-", 1);
@@ -35,6 +38,8 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 	{
 		ft_putnbr_fd(n / 10, fd);
+		if (n < 0)
+			ft_putnbr_fd((n % 10) * (-1), fd);
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
