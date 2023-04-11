@@ -12,15 +12,6 @@
 
 #include "libft.h"
 
-/**
- * It takes a string, skips any whitespace, 
- * then takes any number of digits, and returns the number
- * represented by those digits
- * 
- * @param str The string to be converted.
- * 
- * @return the integer value of the string.
- */
 int	ft_atoi(const char *str)
 {
 	size_t		i;

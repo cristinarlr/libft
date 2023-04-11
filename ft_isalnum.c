@@ -21,12 +21,6 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-// int main (void)
-// {
-//     ft_isalnum('a');
-//     return (0);
-// }
-
 /* int	main ()
 {
     char i;

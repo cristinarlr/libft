@@ -1,51 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/22 15:11:14 by crramire          #+#    #+#             */
-/*   Updated: 2023/04/08 07:53:48 by Cristina         ###   ########.fr       */
+/*   Created: 2023/04/05 09:23:12 by Cristina          #+#    #+#             */
+/*   Updated: 2023/04/06 18:26:18 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-
-/* VERSION PRETTY
-void ft_bzero(void *s, size_t n)
+/*
+void	ft_transform(unsigned int i, char *s)
 {
-    ft_memset(s, 0, n);
-} */
+	(void)i;
+	s[i] = 'x';
+}*/
 
-void	ft_bzero(void *s, size_t len)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned char	*ptr;
+	unsigned int	i;
 
-	ptr = (unsigned char *) s;
-	while (len--)
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i] != '\0')
 	{
-		*ptr = 0;
-		ptr++;
+		(*f)(i, &s[i]);
+		i++;
 	}
 }
-
-/* int	main()
-{
-	char s[] = "Prueba de bzero para la libft.h!";
-    printf("%s\n", s);
-	ft_bzero(s, 3);
-	printf("%s\n", s);
-	return (0);
-} */
 /*
 int	main()
 {
-	char mem[] = "hola";
-	
-	memset(mem, 'e', 5);
-    ft_bzero(mem, 5);
-    write(1, mem, 5);
+	char str[] = "Hello World!";
+    printf("str antes: %s\n", str);
+	ft_striteri(str, ft_transform);
+    printf("str después: %s\n", str);
 	return (0);
 }*/
