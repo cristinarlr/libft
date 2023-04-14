@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 14:35:34 by crramire          #+#    #+#             */
-/*   Updated: 2023/04/01 18:17:36 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/14 14:04:41 by crramire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,38 @@ char	**ft_split(char const *s, char c)
 	}
 	return (array);
 }
+
+
+int	 main()
+{
+	char 	**arr;
+	char	*str;
+	char	c;
+	int		i;
+
+	str = "el.viento.de.tramontana.mola.mucho";
+	c = '.';
+	arr = ft_split(str, c);
+	i = 0;
+	while (arr[i] != NULL)
+	{
+		printf("1%s\n", arr[i]);
+		i++;
+	}
+	ft_freearray(arr);
+	return(0);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* int main()
 {
