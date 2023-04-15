@@ -42,10 +42,10 @@ BONUS_SOURCES = ft_lstnew_bonus.c 			\
 				ft_lstsize_bonus.c 			\
 				ft_lstlast_bonus.c			\
 				ft_lstadd_back_bonus.c 		\
-				ft_lstdelone_bonus.c 			\
-				#ft_lstclear_bonus.c	 		\
-				#ft_lstiter_bonus.c 			\
-				#ft_lstmap_bonus.c 				\
+				ft_lstdelone_bonus.c		\
+				ft_lstclear_bonus.c	 		\
+				ft_lstiter_bonus.c 			\
+				ft_lstmap_bonus.c			\
 
 
 OBJS = $(SRCS:%.c=%.o)
@@ -55,7 +55,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
 
 bonus: $(BONUS_OBJECTS)
 	ar r $(NAME) $(BONUS_OBJECTS)
@@ -73,7 +72,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
-run: test.o $(NAME)
-	$(CC) $(CFLAGS) $(^) -o run.out
-	./run.out

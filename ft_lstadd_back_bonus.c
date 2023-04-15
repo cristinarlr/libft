@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:47:58 by Cristina          #+#    #+#             */
-/*   Updated: 2023/04/14 15:45:58 by crramire         ###   ########.fr       */
+/*   Updated: 2023/04/15 16:13:39 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,21 +20,13 @@
 
 void    ft_lstadd_back(t_list **lst, t_list *new)
  {
-    t_list	*aux;
-	 
-	if(!new | !lst)
+    t_list *last;
+
+    if(!new)
         return ;
-	if(!*lst)
-	{
-		*lst = new;
-		return ;
-	}
-	aux = *lst;
-	while(aux->next != NULL)
-	{
-		aux = aux->next;
-	}
-	aux->next = new;
+    
+    last = ft_lstlast(*lst);
+    last -> next = new;
  }
 
  /* int    main()
