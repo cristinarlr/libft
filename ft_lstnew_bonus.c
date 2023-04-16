@@ -6,7 +6,7 @@
 /*   By: Cristina <Cristina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 07:54:48 by Cristina          #+#    #+#             */
-/*   Updated: 2023/04/13 14:07:48 by Cristina         ###   ########.fr       */
+/*   Updated: 2023/04/16 00:21:50 by Cristina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,9 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
 	
-	if (!content)
-		return(0);
+	/* if (!content)
+		return(0); 
+		si añado eso me da error, pq?*/
 	new = (t_list *)malloc(sizeof(t_list));
 	if (!new)
 		return(0);
